@@ -59,7 +59,7 @@ const DashTable = (props) => {
     return (
         <div style={{background:'rgba(255, 255, 255, 0.6)', backdropFilter: 'blur(40px)', margin:'16px', padding:'16px', borderRadius:'16px'}}>
             <div style={{display:'flex', justifyContent:'center'}}>
-            {loader && <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_uyeexw8i.json" background="transparent"  speed="1"  style={{width: "300px", height: "300px"}} loop autoplay></lottie-player>}
+            {loader && <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_3pb9gbyk.json" background="transparent"  speed="1"  style={{width: "300px", height: "300px"}} loop autoplay></lottie-player>}
             </div>
             <table style={{tableLayout:'fixed'}} className="table table-striped align-middle">
                 <thead>

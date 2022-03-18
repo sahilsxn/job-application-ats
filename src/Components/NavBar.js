@@ -6,13 +6,13 @@ function NavBar() {
   return (
     <div>
       
-      <div style={{display:'flex', justifyContent:'space-between', backgroundColor:'black', marginBottom:'0px', padding:'16px'}}>
+      <div style={{display:'flex', justifyContent:'space-around', backgroundColor:'black', marginBottom:'0px', padding:'16px'}}>
 
-        <div style={{margin: 'auto' }}>
+        <div>
           <Link style={{ textDecoration: 'none', color:'white' }} to="/"><b>Job Seekers</b></Link>
         </div>
 
-        <div style={{margin: 'auto'}}>
+        <div>
           <Link style={{ textDecoration: 'none', color:'white'}} to="/admin"><b>Admin Dashboard</b></Link><br/>
         </div>
       
