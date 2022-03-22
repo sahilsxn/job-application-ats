@@ -11,7 +11,7 @@ const RoleSelect = (props) => {
         axios.get('https://dct-application-form.herokuapp.com/users/application-forms')
         .then((response)=>{
             const result = response.data
-            setCandidateData(result)
+            setCandidateData(result.reverse())
             console.log(result)
             setLoader(false)
         })

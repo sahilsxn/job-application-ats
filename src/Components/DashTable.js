@@ -85,8 +85,10 @@ const DashTable = (props) => {
                                     </td>
                                     <td><button class="btn btn-primary" onClick={()=>{showModal(ele._id)}}>View Details</button></td>
                                     <td>
-                                        {ele.status === "rejected" && <button className="btn btn-success" onClick={()=>{handleSelect(ele._id)}}>Select</button>} 
-                                        {ele.status === "shortlisted" && <button className="btn btn-danger" onClick={()=>{handleReject(ele._id)}}>Reject</button>}
+                                        {ele.status === "rejected" && <span class="material-icons-outlined">block</span>} 
+                                        {ele.status === "shortlisted" && <span class="material-icons-outlined">task_alt</span>}
+                                        {/* {ele.status === "rejected" && <button className="btn btn-success" onClick={()=>{handleSelect(ele._id)}}>Select</button>} 
+                                        {ele.status === "shortlisted" && <button className="btn btn-danger" onClick={()=>{handleReject(ele._id)}}>Reject</button>} */}
                                         {ele.status === "applied" && 
                                         <div>
                                             <button style={{marginRight: '20px'}} className="btn btn-success" onClick={()=>{handleSelect(ele._id)}}>Select</button>

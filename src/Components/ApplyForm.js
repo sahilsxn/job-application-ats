@@ -1,7 +1,6 @@
 import {React, useState} from 'react'
 import validator from 'validator';
 import axios from 'axios'
-import illustration from '../Images/illustration.svg'
 import illustration1 from '../Images/illustration1.svg'
 import '../form-page.css'
 
@@ -86,8 +85,8 @@ const ApplyForm = (props) => {
     }
 
     return (
-        <div style={{display:"flex", justifyContent:"space-between", paddingTop:'16px', paddingBottom:'48px'}} className="form-page">
-        <div style={{background:'rgba(255, 255, 255, 0.6)', backdropFilter: 'blur(40px)', margin:'16px',marginTop:'0px', padding:'24px', borderRadius:'12px', width:'40%'}}>
+        <div className="form-page">
+        <div className='form-area'>
             <h3 style={{paddingBottom:'16px'}} >Apply for a Job</h3> 
             
             
@@ -140,7 +139,7 @@ const ApplyForm = (props) => {
             </form>
 
         </div>
-        <div style={{width:'50%', margin:'32px'}}>
+        <div className='illustration'>
             <img className='md sm lg' src={illustration1} alt="illustration"/>
         </div>
         </div>

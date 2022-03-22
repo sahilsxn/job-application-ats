@@ -1,12 +1,13 @@
 import Dashboard from './Dashboard'
 import ApplyForm from './ApplyForm';
 import {Link, Route} from 'react-router-dom'
+import '../form-page.css'
 
 function NavBar() {
   return (
     <div>
       
-      <div style={{display:'flex', justifyContent:'space-around', backgroundColor:'black', marginBottom:'0px', padding:'16px'}}>
+      <div className='navbar'>
 
         <div>
           <Link style={{ textDecoration: 'none', color:'white' }} to="/"><b>Job Seekers</b></Link>
